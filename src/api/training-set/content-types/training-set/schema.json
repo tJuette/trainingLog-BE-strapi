@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "training_sets",
+  "info": {
+    "singularName": "training-set",
+    "pluralName": "training-sets",
+    "displayName": "TrainingSet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isWorkset": {
+      "type": "boolean"
+    },
+    "Repetitions": {
+      "type": "integer"
+    },
+    "Weight": {
+      "type": "decimal"
+    },
+    "Exercise": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::exercise.exercise"
+    },
+    "TrainingDate": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::training-date.training-date"
+    },
+    "User": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

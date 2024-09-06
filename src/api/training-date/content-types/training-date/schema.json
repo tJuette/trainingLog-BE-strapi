@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "training_dates",
+  "info": {
+    "singularName": "training-date",
+    "pluralName": "training-dates",
+    "displayName": "TrainingDate",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TrainingDay": {
+      "type": "date"
+    }
+  }
+}
